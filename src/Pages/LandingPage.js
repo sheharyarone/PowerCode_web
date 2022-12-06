@@ -40,8 +40,9 @@ function LandingPage() {
           />
         </div>
       </div>
-      {/* Official Partners Section */}
-      <div className="bg_image">
+      {/* 2 ROWS HAVING SAME BACKGROUND */}
+      <div className="bg_image_1">
+        {/* Official Partners Section */}
         <div className="col-sm-12">
           <div className="row mt-5 m-5">
             <div className="col-sm">
@@ -101,7 +102,7 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        {/* YOUR PERFECTLY SKILLED TEAM */}
+        {/* GET YOUR PERFECTLY SKILLED TEAM */}
         <div className="row p-5">
           <div className="col-sm-12">
             <h1 className="fw-bold">Get Your Perfectly-skilled Team</h1>
@@ -147,7 +148,22 @@ function LandingPage() {
           </div>
         </div>
       </div>
-
+      <div className="bg_color_2 row m-5 rounded-4">
+        <div className="col-sm-6 m-auto">
+          <h2>Find Out Your Project Cost</h2>
+          <p>We’ll contact you within one business day (GMT +2).</p>
+          <badge className="badge bg-dark text_size_card px-5 py-2 rounded-4">
+            Get estimation
+          </badge>
+        </div>
+        <div className="col-sm-6 mt-sm-0 ">
+          <img
+            className="img-fluid img_setting"
+            src={require("../Assets/images/objects.png")}
+            alt=""
+          />
+        </div>
+      </div>
       <Footer />
     </div>
   );

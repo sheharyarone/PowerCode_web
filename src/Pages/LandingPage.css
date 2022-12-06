@@ -1,6 +1,21 @@
 .fixed_style {
   overflow-x: hidden !important;
 }
-.bg_image {
+.bg_image_1 {
   background-image: url("https://powercode.co.uk/static/media/line.4129c3d0.svg");
+}
+.bg_color_2 {
+  background: #ebf1fb;
+}
+.text_size_card {
+  font-size: 100%;
+}
+
+.img_setting {
+  margin-top: -80px;
+}
+@media screen and (max-width: 980px) {
+  .img_setting {
+    margin-top: 1px;
+  }
 }
