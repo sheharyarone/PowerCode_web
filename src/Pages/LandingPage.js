@@ -6,9 +6,9 @@ import PST_Steps from "../Components/PST_Steps";
 
 function LandingPage() {
   return (
-    <div className="col-sm-12 fixed_style">
+    <div className="col-sm-12 fixed_style bg-white">
       <div className="row">
-        <div className="col-sm-12 bg-light">
+        <div className="col-sm-12">
           <Navbar />
         </div>
       </div>

@@ -3,9 +3,13 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-xl bg-white m-4">
+      <nav className="navbar navbar-expand-xl m-4">
         <a href="" className="navbar-brand">
-          <img className="img-fluid" src={require("../Assets/images/logo.png")} alt="" />
+          <img
+            className="img-fluid"
+            src={require("../Assets/images/logo.png")}
+            alt=""
+          />
         </a>
         <button
           className="navbar-toggler"
@@ -44,10 +48,10 @@ function Navbar() {
                 <p>INSIGHTS</p>
               </a>
             </il>
-            <il className="nav-item p-2 bg-dark rounded-pill">
-              <button className="btn btn-dark rounded-pill px-4" type="submit">
-                <b>Get in Touch</b>
-              </button>
+            <il className="nav-item p-2 mt-1 rounded-pill">
+              <badge className="badge bg-dark text_size_card px-5 py-2 rounded-4">
+                Get estimation
+              </badge>
             </il>
             <il className="nav-item p-2">
               <a href="" className="nav-link">
