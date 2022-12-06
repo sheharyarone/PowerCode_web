@@ -1,9 +1,11 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
+import Navbar from "../../Components/Navbar";
 import "./LandingPage.css";
-import Footer from "../Components/Footer";
-import PST_Steps from "../Components/PST_Steps";
-
+import Footer from "../../Components/Footer";
+import PST_Steps from "../../Components/PST_Steps";
+import objects from "../../Assets/images/objects.png";
+import landing from "../../Assets/images/landing.png";
+import TabHandler from "./Tabs/TabHandler";
 function LandingPage() {
   return (
     <div className="col-sm-12 fixed_style bg-white">
@@ -33,11 +35,7 @@ function LandingPage() {
           </div>
         </div>
         <div className="col-md-7 col-sm-12 ">
-          <img
-            className="img-fluid"
-            src={require("../Assets/images/landing.png")}
-            alt=""
-          />
+          <img className="img-fluid" src={landing} alt="" />
         </div>
       </div>
       {/* 2 ROWS HAVING SAME BACKGROUND */}
@@ -148,22 +146,23 @@ function LandingPage() {
           </div>
         </div>
       </div>
+      {/*  */}
       <div className="bg_color_2 row m-5 rounded-4">
-        <div className="col-sm-6 m-auto">
-          <h2>Find Out Your Project Cost</h2>
-          <p>We’ll contact you within one business day (GMT +2).</p>
+        <div className="col-sm-6 m-auto ps-5 p-2">
+          <h3 className="fw-bolder pb-3">Find Out Your Project Cost</h3>
+          <h5 className="pb-2">
+            We’ll contact you within one business day (GMT +2).
+          </h5>
           <badge className="badge bg-dark text_size_card px-5 py-2 rounded-4">
             Get estimation
           </badge>
         </div>
         <div className="col-sm-6 mt-sm-0 ">
-          <img
-            className="img-fluid img_setting"
-            src={require("../Assets/images/objects.png")}
-            alt=""
-          />
+          <img className="img-fluid img_setting" src={objects} alt="" />
         </div>
       </div>
+      <TabHandler />
+
       <Footer />
     </div>
   );
